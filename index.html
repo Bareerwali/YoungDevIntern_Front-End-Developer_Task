@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature's Beauty</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8f5e9;
+            text-align: center;
+        }
+        .navbar {
+            background-color: #2e7d32;
+            padding: 15px;
+            color: white;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 50px;
+            gap: 20px;
+        }
+        .image-box {
+            width: 30%; /* Responsive width */
+            min-width: 250px; /* Ensures images don't shrink too much */
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .image-box img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2e7d32;
+            margin: 10px 0;
+        }
+        .description {
+            font-size: 14px;
+            color: #333;
+        }
+        .footer {
+            background-color: #2e7d32;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            width: 100%;
+            position: relative;
+            margin-top: 13.5em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Stack items on small screens */
+            }
+            .image-box {
+                width: 80%; /* Make images bigger for mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="gallery.html">Gallery</a>
+    </div>
+    
+    <h1>Welcome to Nature's Beauty</h1>
+    <p>Explore the wonders of nature and enjoy its breathtaking beauty.</p>
+
+    <div class="container">
+        <div class="image-box">
+            <img src="https://img.freepik.com/premium-photo/beautiful-landscape-with-lake-mountains-background_1322455-3823.jpg" alt="Nature Image">
+            <div class="title">Beautiful Landscape</div>
+            <div class="description">A breathtaking view of nature with lush greenery and calm surroundings.</div>
+        </div>
+
+        <div class="image-box">
+            <img src="https://www.explore.com/img/gallery/majestic-mountains-you-need-to-see-in-your-lifetime/l-intro-1723654667.jpg" alt="Mountain Image">
+            <div class="title">Majestic Mountains</div>
+            <div class="description">Towering mountains touching the sky, offering a view of nature’s grandeur.</div>
+        </div>
+
+        <div class="image-box">
+            <img src="https://t4.ftcdn.net/jpg/05/05/72/43/360_F_505724304_Ezh1XyejL3iN7op0zqH2vprzSGFBGEuy.jpg" alt="Forest Image">
+            <div class="title">Enchanting Forest</div>
+            <div class="description">A peaceful forest filled with tall trees and the soothing sounds of nature.</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="image-box">
+            <img src="https://images.unsplash.com/photo-1486365227551-f3f90034a57c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmlyZHxlbnwwfHwwfHx8MA%3D%3D" alt="Nature Image">
+            <div class="title">European Bee-eater</div>
+            <div class="description">These birds are especially known for their acrobatic flight and are often seen hunting in mid-air.</div>
+        </div>
+
+        <div class="image-box">
+            <img src="https://images.pexels.com/photos/631477/pexels-photo-631477.jpeg?cs=srgb&dl=pexels-neale-lasalle-197020-631477.jpg&fm=jpg" alt="Mountain Image">
+            <div class="title">Beautiful Stars</div>
+            <div class="description">they undergo various transformations, eventually ending as white dwarfs, neutron stars, or black holes.</div>
+        </div>
+
+        <div class="image-box">
+            <img src="https://voiceoftheocean.org/wp-content/uploads/2023/10/Water-surface-02.jpg" alt="Forest Image">
+            <div class="title">Enchanting Forest</div>
+            <div class="description">The ocean is home to ecosystems like coral reefs, <br> deep-sea trenches, and vast underwater mountain ranges, brand it is essential for sustaining life <br> on Earth.</div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        &copy; 2025 Nature's Beauty | All rights reserved
+    </div>
+</body>
+</html>

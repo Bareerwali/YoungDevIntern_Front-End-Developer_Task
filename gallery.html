@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature's Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f7;
+            color: #333;
+            text-align: center;
+        }
+        .navbar {
+            background-color: #2e7d32;
+            padding: 15px;
+            color: white;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        h1 {
+            margin-top: 30px;
+            font-size: 36px;
+            color: #2e7d32;
+        }
+        .gallery-container {
+            padding: 50px 10px;
+        }
+        .gallery-section {
+            margin-bottom: 50px;
+        }
+        .gallery-section h2 {
+            font-size: 28px;
+            color: #2e7d32;
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .image-box {
+            width: 300px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .image-box img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .image-box:hover {
+            transform: scale(1.05);
+        }
+        .image-box .title {
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            background: #2e7d32;
+            color: white;
+        }
+        .footer {
+            background-color: #2e7d32;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .gallery {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .image-box {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+    </div>
+
+    <h1>Explore Nature's Beauty</h1>
+    
+    <div class="gallery-container">
+        <!-- Birds Section -->
+        <div class="gallery-section">
+            <h2>Birds</h2>
+            <div class="gallery">
+                <div class="image-box">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/026/513/090/small_2x/bird-flying-on-sunset-sky-ai-generated-photo.jpg" alt="Bird">
+                    <div class="title">Colorful Birds</div>
+                </div>
+                <div class="image-box">
+                    <img src="https://www.shutterstock.com/image-photo/majestic-bald-eagle-soaring-majestically-600nw-2364347943.jpg" alt="Eagle">
+                    <div class="title">Majestic Eagles</div>
+                </div>
+                <div class="image-box">
+                    <img src="https://www.shutterstock.com/image-photo/two-scarlet-macaw-parrots-flying-600nw-1871398861.jpg" alt="Parrot">
+                    <div class="title">Exotic Parrots</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ocean Section -->
+        <div class="gallery-section">
+            <h2>Ocean</h2>
+            <div class="gallery">
+                <div class="image-box">
+                    <img src="https://media.istockphoto.com/id/1368264599/photo/powerful-crashing-ocean-wave-with-hint-of-rainbow-shining-through.jpg?s=612x612&w=0&k=20&c=nJOMO02k5zwNTXn1ZxMt4qf5VIl3stRcBvb6OvYNUVY=" alt="Ocean">
+                    <div class="title">Vast Oceans</div>
+                </div>
+                <div class="image-box">
+                    <img src="https://www.travelandleisure.com/thmb/AoiVtreLEQR4SH8Bw-6JipVn2Mk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/zanzibar-TROPVACAY0522-80e9096ae92c4647a97cf8362cba4d5f.jpg" alt="Beach">
+                    <div class="title">Tropical Beaches</div>
+                </div>
+                <div class="image-box">
+                    <img src="https://img.freepik.com/premium-photo/large-beautiful-coral-reefs-bottom-underwater-seascape_124507-18225.jpg" alt="Coral Reef">
+                    <div class="title">Underwater Reefs</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stars Section -->
+        <div class="gallery-section">
+            <h2>Stars</h2>
+            <div class="gallery">
+                <div class="image-box">
+                    <img src="https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg" alt="Stars">
+                    <div class="title">Night Sky</div>
+                </div>
+                <div class="image-box">
+                    <img src="https://cdn.mos.cms.futurecdn.net/fBx3z3Uk5aBFxtyAZsZABc.jpg" alt="Galaxy">
+                    <div class="title">Distant Galaxies</div>
+                </div>
+                <div class="image-box">
+                    <img src="https://stsci-opo.org/STScI-01H8PJNNBQTCKVFMKZMBYTN6PM.jpg" alt="Milky Way">
+                    <div class="title">Milky Way</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mountains Section -->
+        <div class="gallery-section">
+            <h2>Mountains</h2>
+            <div class="gallery">
+                <div class="image-box">
+                    <img src="https://i0.wp.com/www.littlethingstravel.com/wp-content/uploads/2015/06/Mount-Everest-Mountain.jpg?resize=1024%2C687" alt="Mountain">
+                    <div class="title">Majestic Mountains</div>
+                </div>
+                <div class="image-box">
+                    <img src="https://i.pinimg.com/736x/e2/16/80/e2168035565a9ebc9c1b3efd192d3776.jpg" alt="Snow Mountains">
+                    <div class="title">Snow-capped Peaks</div>
+                </div>
+                <div class="image-box">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/046/730/532/small_2x/the-rocky-terrain-stretches-as-far-as-the-eye-can-see-with-no-visible-end-in-sight-photo.jpg" alt="Rocky Mountains">
+                    <div class="title">Rocky Terrain</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Forests Section -->
+        <div class="gallery-section">
+            <h2>Forests</h2>
+            <div class="gallery">
+                <div class="image-box">
+                    <img src="https://images.stockcake.com/public/5/3/a/53a2f7e7-cd1f-433d-a580-4e70a22468de_large/lush-green-forest-stockcake.jpg" alt="Forest">
+                    <div class="title">Lush Green Forests</div>
+                </div>
+                <div class="image-box">
+                    <img src="https://miro.medium.com/v2/resize:fit:1400/1*jSOsZ_5aDLAsd7s0dTVtVA.jpeg" alt="Rainforest">
+                    <div class="title">Rainforests</div>
+                </div>
+                <div class="image-box">
+                    <img src="https://img.freepik.com/premium-photo/embrace-autumn-vibes-capture-beauty-fall-with-autumn-road_198067-181070.jpg" alt="Autumn Forest">
+                    <div class="title">Autumn Vibes</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Landscapes Section -->
+        <div class="gallery-section">
+            <h2>Landscapes</h2>
+            <div class="gallery">
+                <div class="image-box">
+                    <img src="https://www.usnews.com/object/image/00000162-f3a3-d0d5-a57f-fbf38fc30000/15-li-river.jpg?update-time=1677094179665&size=responsive640" alt="Landscape">
+                    <div class="title">Stunning Landscapes</div>
+                </div>
+                <div class="image-box">
+                    <img src="https://assets.iflscience.com/assets/articleNo/69708/aImg/69106/sand-o.webp" alt="Desert">
+                    <div class="title">Desert Sands</div>
+                </div>
+                <div class="image-box">
+                    <img src="https://media.istockphoto.com/id/175506347/photo/rolling-prairie-landforms.jpg?s=612x612&w=0&k=20&c=Sgg51T4hj6WZIhFJU22arZFKv4xNPjB8e7nNqXipyj8=" alt="Prairie">
+                    <div class="title">Open Prairies</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2025 Nature's Gallery | All rights reserved
+    </div>
+
+</body>
+</html>
